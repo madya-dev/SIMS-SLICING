@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/assets/images/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      href="/assets/images/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="/vendor/bootstrap-5.0.2-dist/css/bootstrap.min.css"
+      type="text/css"
+    />
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="/vendor/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/vendor/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
+    />
+    <!-- my style -->
+    <link rel="stylesheet" href="/assets/styles/main.css" type="text/css" />
+    <title>SIMS</title>
+  </head>
+  <body>
+    <!-- page auth -->
+    <section class="page-auth">
+      <div class="row">
+        <div class="col-lg-6 pt-5">
+          <div class="form-wrapper">
+            <div class="container">
+              <h1>Selamat Datang</h1>
+              <p>Daftar untuk menjadi bagian dari SIMS</p>
+              <!-- form -->
+              <form action="" method="POST">
+                <div class="form-group mb-4">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    class="form-control rounded-pill"
+                    placeholder="Masukan email kamu"
+                    id="email"
+                  />
+                </div>
+                <div class="form-group mb-4">
+                  <label for="password">Kata Sandi</label>
+                  <input
+                    type="password"
+                    class="form-control rounded-pill"
+                    placeholder="Masukan kata sandi kamu"
+                    id="password"
+                  />
+                </div>
+                <div class="form-group mb-4">
+                  <label for="password2">Ulangi Kata Sandi</label>
+                  <input
+                    type="password"
+                    class="form-control rounded-pill"
+                    placeholder="Ulangi kata sandi kamu"
+                    id="password2"
+                  />
+                </div>
+                <button type="submit" class="btn-auth-submit rounded-pill">
+                  Daftar
+                </button>
+                <p class="text-center my-3 text-gray-200">atau</p>
+                <button
+                  type="button"
+                  class="
+                    btn-auth-google
+                    rounded-pill
+                    d-flex
+                    gap-3
+                    align-items-center
+                    justify-content-center
+                  "
+                >
+                  <img src="/assets/images/logo/google.svg" alt="" /> Daftar
+                  dengan akun Google
+                </button>
+                <p class="no-account my-3">
+                  Sudah punya akun? <a href="">masuk</a>
+                </p>
+              </form>
+              <!-- end form -->
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 d-none d-lg-block">
+          <div class="image-wrapper"></div>
+        </div>
+      </div>
+    </section>
+    <!-- end page auth -->
+    <!-- scripts -->
+    <script src="/vendor/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="/vendor/jquery/jquery-3.6.0.min.js"></script>
+    <!-- my script -->
+    <script src="/assets/scripts/main.js"></script>
+  </body>
+</html>

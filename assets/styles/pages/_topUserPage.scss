@@ -1,0 +1,138 @@
+.top-user-page {
+  background-color: $bg;
+  padding-bottom: 70px;
+  .container {
+    display: flex;
+    padding-top: 100px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .card {
+    box-sizing: border-box;
+    h2 {
+      font-size: 18px;
+      font-weight: 500;
+      margin: 32px 16px;
+    }
+  }
+  table {
+    overflow: scroll;
+  }
+  h1 {
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+  }
+  p {
+    font-weight: 300px;
+    color: $black;
+    max-width: 390px;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  .winner-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 32px;
+    .winner.top-seller {
+      margin-top: 28px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      .foto-profile {
+        width: 72px;
+        height: 72px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        margin-bottom: 32px;
+      }
+      .badge {
+        margin-top: 40px;
+        position: absolute;
+      }
+      .data {
+        .name {
+          margin-bottom: 4px;
+          font-size: 16px;
+          font-weight: 500;
+        }
+        p {
+          font-weight: 300px;
+          font-size: 12px;
+          margin-bottom: 4px;
+          img {
+            width: 14px;
+          }
+        }
+      }
+      &.first-winner {
+        margin-top: 0;
+        .foto-profile {
+          width: 100px;
+          height: 100px;
+        }
+        .badge {
+          margin-top: 65px;
+          //   margin-left: -16px;
+          padding: 0;
+          width: 56px;
+          height: 56px;
+        }
+      }
+    }
+    .winner.top-region {
+      margin-top: 28px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      .foto-profile {
+        width: 72px;
+        height: 72px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-bottom: 8px;
+      }
+      .data {
+        .name {
+          margin-bottom: 4px;
+          font-size: 16px;
+          font-weight: 500;
+        }
+        p {
+          font-weight: 300px;
+          font-size: 12px;
+          margin-bottom: 4px;
+          img {
+            width: 14px;
+          }
+        }
+      }
+      .badge {
+        img {
+          width: 32px;
+        }
+        margin-bottom: 16px;
+      }
+      &.first-winner {
+        margin-top: 0;
+        .foto-profile {
+          width: 100px;
+          height: 100px;
+        }
+        .badge {
+          img {
+            width: 40px;
+          }
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+}

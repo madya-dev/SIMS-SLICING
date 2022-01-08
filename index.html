@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/assets/images/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      href="/assets/images/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="/vendor/bootstrap-5.0.2-dist/css/bootstrap.min.css"
+      type="text/css"
+    />
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="/vendor/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/vendor/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
+    />
+    <!-- my style -->
+    <link rel="stylesheet" href="/assets/styles/main.css" type="text/css" />
+    <title>SIMS</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top" id="topbar">
+        <div class="container">
+          <a class="navbar-brand logo align-items-center d-flex gap-2" href="/">
+            <img
+              src="/assets/images/logo/sims.svg"
+              alt=""
+              width="45"
+              height="45"
+              class="d-inline-block align-text-top"
+            />
+            SIMS
+          </a>
+          <ul class="navbar-nav gap-3 d-flex align-items-center" id="navbarNav">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pengguna-terbaik">Pengguna Terbaik</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/hadiah">Hadiah</a>
+            </li>
+            <span class="divider"></span>
+            <div class="auth no-login">
+              <a href="/daftar" class="btn-register btn-my">Daftar</a>
+              <a href="/masuk" class="btn-login btn-my btn-my-primary">Masuk</a>
+            </div>
+          </ul>
+          <a href="/masuk" class="icon-login"
+            ><i class="icon ion-md-contact"></i
+          ></a>
+        </div>
+      </nav>
+    </header>
+    <!-- end header -->
+    <div class="page-landing">
+      <!-- hero -->
+      <section class="hero">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 order-2 order-lg-1">
+              <div class="hero-text">
+                <h3 class="sub-heading">Mulai dengan hal-hal kecil</h3>
+                <h1 class="heading">
+                  LESTARIKAN <span>BUMI</span> MULAI DARI
+                  <span>DIRI SENDIRI</span>
+                </h1>
+                <p class="desc">
+                  Ayo kita lestarikan Bumi mulai dengan cara membebaskan bumi
+                  dari sampah dan dapatkan hadiah yang menarik.
+                </p>
+                <button class="btn-my btn-my-primary btn" id="btn-hero">
+                  Mulai Sekarang
+                </button>
+              </div>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2">
+              <div class="hero-image">
+                <img src="/assets/images/vector/hero.svg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end hero -->
+      <!-- how-to-work -->
+      <section class="how-to-work">
+        <div class="container">
+          <h3 class="sub-heading">Bagaimana SIMS bekerja?</h3>
+          <h2 class="heading">
+            KAMI MENYEDIAKAN BANYAK FITUR DENGAN BANYAK MANFAAT
+          </h2>
+
+          <div class="card-wrapper">
+            <div class="row">
+              <div class="col-lg-4 mb-3">
+                <div class="card h-100">
+                  <div class="card-icon">
+                    <img
+                      src="/assets/images/icons/ic_bawa_sampah.svg"
+                      alt="bawa-sampah"
+                    />
+                  </div>
+                  <div class="card-text">
+                    <h5 class="card-title">Mambawa sampah</h5>
+                    <p class="card-desc">
+                      Masyarakat membawa sampah yang sudah dipilah ke lokasi
+                      penerimaan sampah yang ada di Desa.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mb-3">
+                <div class="card h-100">
+                  <div class="card-icon">
+                    <img
+                      src="/assets/images/icons/ic_terima_sampah.svg"
+                      alt="terima-sampah"
+                    />
+                  </div>
+                  <div class="card-text">
+                    <h5 class="card-title">Menerima sampah</h5>
+                    <p class="card-desc">
+                      Pihak Desa menerima sampah dan melakukan penimbangan serta
+                      input data sampah yang dibawa oleh masyarakat
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mb-3">
+                <div class="card h-100">
+                  <div class="card-icon">
+                    <img
+                      src="/assets/images/icons/ic_terima_reward.svg"
+                      alt="terima-reward"
+                    />
+                  </div>
+                  <div class="card-text">
+                    <h5 class="card-title">Menerima sampah</h5>
+                    <p class="card-desc">
+                      Koin yang di dapat dari hasil penjualan sampah yang dibawa
+                      ke Desa dapat ditukarkan dengan hadiah yang tersedia
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end how-to-work -->
+      <section class="section-testimony container text-center">
+        <h2 class="heading">Apa Kata Mereka?</h2>
+        <p class="sub-heading">Beberapa komentar dari pengguna tentang SIMS</p>
+        <div class="owl-carousel owl-theme text-start" id="testimony-carousel">
+          <div class="item card">
+            <i class="icon ion-md-quote"></i>
+            <p>
+              SIMS sangat membantu saya untuk menyingkirkan sampah dari rumah.
+            </p>
+            <div class="profile">
+              <img src="/assets/images/man-1.jpg" alt="profile-oskar" />
+              <h5 class="name">Oskar Maha Kasi</h5>
+              <p class="desa">Desa Karang Asem</p>
+            </div>
+          </div>
+          <div class="item card">
+            <i class="icon ion-md-quote"></i>
+            <p>
+              Berkat adanya SIMS lingkungan saya menjadi lebih bersih. Terima
+              kasih.
+            </p>
+            <div class="profile">
+              <img src="/assets/images/man-2.jpg" alt="profile-madya" />
+              <h5 class="name">Madya Santosa</h5>
+              <p class="desa">Desa Undisan</p>
+            </div>
+          </div>
+          <div class="item card">
+            <i class="icon ion-md-quote"></i>
+            <p>
+              Berkat adanya SIMS lingkungan saya menjadi lebih bersih. Terima
+              kasih.
+            </p>
+            <div class="profile">
+              <img src="/assets/images/man-3.jpg" alt="profile-madya" />
+              <h5 class="name">Gus Mas</h5>
+              <p class="desa">Desa Mas</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row footer-content">
+          <div class="col-lg-4">
+            <a class="logo align-items-center d-flex gap-2 mb-3" href="/">
+              <img
+                src="/assets/images/logo/sims.svg"
+                alt=""
+                width="45"
+                height="45"
+                class="d-inline-block align-text-top"
+              />
+              SIMS
+            </a>
+            <p>
+              Sistem Informasi Management Sampah (SIMS) adalah sebuah layanan
+              yang dibuat untuk membantu mengatasi masalah sampah yang ada di
+              Bumi.
+            </p>
+          </div>
+          <div class="col-lg-2 col-6 col-md-4 about-us">
+            <ul>
+              <li><h5 class="title">Tentang Kami</h5></li>
+              <li><a href="#" class="item">Testimoni</a></li>
+              <li><a href="#" class="item">Hadiah</a></li>
+              <li><a href="#" class="item">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-6 col-md-4 legal">
+            <ul>
+              <li><h5 class="title">Hukum</h5></li>
+              <li><a href="#" class="item">Syarat & Ketentuan</a></li>
+              <li><a href="#" class="item">Kebijakan Privasi</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-6 col-md-4 contact">
+            <ul>
+              <li><h5 class="title">Kontak</h5></li>
+              <li>
+                <a href="mailto:sims@gmail.com" class="item">sims@gmail.com</a>
+              </li>
+              <li>
+                <a href="tel:+6281334514521" class="item">0813-3451-4521</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-6 col-md-4 follow-us">
+            <ul>
+              <li><h5 class="title">Ikuti Kami</h5></li>
+              <li>
+                <a href="#" class="item">Facebook</a>
+              </li>
+              <li>
+                <a href="#" class="item">Twitter</a>
+              </li>
+              <li>
+                <a href="#" class="item">Instagram</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 text-center copyright">
+        Semua Hak Dilindungi SIMS-2021
+      </div>
+    </footer>
+    <!-- bottom nav -->
+    <section class="bottom-nav fixed-bottom">
+      <nav class="navbar">
+        <div class="container">
+          <ul class="navbar-nav d-flex align-items-center">
+            <!-- ROLE USER -->
+            <li class="nav-item active">
+              <a class="nav-link" href="/"
+                ><i class="icon ion-md-home"></i><span>Beranda</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pengguna-terbaik"
+                ><i class="icon ion-md-trophy"></i
+                ><span>Pengguna Terbaik</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/hadiah"
+                ><i class="icon ion-md-cube"></i><span>Hadiah</span></a
+              >
+            </li>
+            <!-- ROLE DESA -->
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="/terima-sampah"
+                ><i class="icon ion-md-bookmarks"></i
+                ><span>Terima Sampah</span></a
+              >
+            </li> -->
+            <!-- ROLE ADMIN -->
+            <li class="nav-item">
+              <a class="nav-link other" id="other" href=""
+                ><i class="icon ion-md-more"></i><span>Lainnya</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+    <!-- end bottom nav -->
+    <!-- other menus -->
+    <div class="other-menus navbar" id="other-menus">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="/"
+            ><i class="icon ion-md-home"></i><span>Beranda</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/"
+            ><i class="icon ion-md-home"></i><span>Beranda</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/"
+            ><i class="icon ion-md-home"></i><span>Beranda</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/"
+            ><i class="icon ion-md-home"></i><span>Beranda</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/"
+            ><i class="icon ion-md-home"></i><span>Beranda</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/"
+            ><i class="icon ion-md-home"></i><span>Beranda</span></a
+          >
+        </li>
+      </ul>
+    </div>
+    <!-- end other menus -->
+    <!-- scripts -->
+    <script src="/vendor/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="/vendor/jquery/jquery-3.6.0.min.js"></script>
+    <script src="/vendor/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <!-- my script -->
+    <script src="/assets/scripts/main.js"></script>
+    <script src="/assets/scripts/pages/landingPage.js"></script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+.page-auth {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+  .form-wrapper {
+    h1,
+    p {
+      text-align: center;
+    }
+
+    h1 {
+      color: $green-light;
+      font-size: 36px;
+      line-height: 54px;
+      font-weight: 700;
+    }
+    p {
+      color: #999999;
+    }
+    form {
+      font-size: 1em;
+      input {
+        border-radius: 50%;
+      }
+      .form-group {
+        label {
+          line-height: 24px;
+          color: $black;
+          margin-bottom: 1em;
+        }
+        .form-control {
+          width: 100%;
+          padding: 16px 24px;
+          border: 1px solid $gray-200;
+          &::placeholder {
+            color: $gray-200;
+          }
+          &:focus,
+          &:active {
+            border: 1px solid $green-light !important;
+            box-shadow: none !important;
+          }
+        }
+      }
+      .forget-password {
+        color: $green-light;
+        float: right;
+      }
+    }
+  }
+  .image-wrapper {
+    width: 50%;
+    position: relative;
+    background-image: url(/assets/images/auth.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    height: 100vh;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(
+        320.17deg,
+        #6ee7b7 -9.17%,
+        rgba(110, 231, 183, 0) 299.27%
+      );
+    }
+  }
+}
+
+.no-account {
+  color: $black !important;
+  font-weight: 300;
+  a {
+    color: $green-light;
+    font-weight: 500;
+  }
+}

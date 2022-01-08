@@ -1,0 +1,143 @@
+.profile-page {
+  background-color: $bg;
+  padding-top: 100px;
+  padding-bottom: 70px;
+
+  .title-page {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .card {
+    padding: 24px 16px;
+    border-radius: 20px;
+    .history {
+      font-size: 16px;
+      font-weight: 300;
+      img {
+        width: 18px;
+      }
+      tr {
+        td {
+          padding: 8px 0;
+        }
+      }
+      .date {
+        color: $gray-200;
+      }
+      .month-now {
+        color: $black;
+        font-weight: 500;
+      }
+    }
+    .profile-photo {
+      position: relative;
+      width: 84px;
+      height: 84px;
+      border: 3px solid $primary;
+      border-radius: 50%;
+      img {
+        border-radius: 50%;
+        width: 100%;
+      }
+      .btn-edit-photo {
+        width: 24px;
+        height: 24px;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        border: 0px solid;
+        background-color: $primary;
+        color: $white;
+        border-radius: 50%;
+        font-size: 12px;
+      }
+    }
+    .data-text {
+      .name-user {
+        font-size: 18px;
+        font-weight: 600;
+      }
+      .role {
+        color: $gray-200;
+        font-size: 14px;
+        font-weight: 300;
+      }
+    }
+    &.card-profile-user {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+
+      .data {
+        font-size: 14px;
+        img {
+          width: 16px;
+        }
+      }
+    }
+    .btn-google {
+      font-size: 14px;
+      font-weight: 300;
+
+      img {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+  .title-card {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+  .form-group {
+    margin-bottom: 16px;
+    label {
+      color: $gray-200;
+      margin-bottom: 8px;
+    }
+    .input-profile {
+      border-top-style: hidden;
+      border-right-style: hidden;
+      border-left-style: hidden;
+      border-bottom-style: groove;
+
+      &:active,
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+  .pw {
+    .form-group {
+      position: relative;
+      .show-hide-pw {
+        position: absolute;
+        right: 16px;
+        margin-top: -34px;
+        font-size: 24px;
+        background-color: rgba(0, 0, 0, 0);
+        color: $gray-200;
+        border: none;
+      }
+    }
+  }
+  #pw-wrapper {
+    display: none;
+  }
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}

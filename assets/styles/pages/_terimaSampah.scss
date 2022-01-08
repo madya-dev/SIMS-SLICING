@@ -1,0 +1,61 @@
+.terima-sampah-page {
+  background-color: $bg;
+  padding-top: 100px;
+  padding-bottom: 70px;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  h1 {
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+  }
+  p {
+    font-weight: 300px;
+    color: $black;
+    max-width: 370px;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  .card {
+    padding: 32px !important;
+    .title {
+      h5 {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 18px;
+      }
+      img {
+        width: 18px;
+        height: 18px;
+      }
+    }
+    .data {
+      font-size: 14px;
+      .data-child {
+        width: 100%;
+        span {
+          float: right;
+        }
+      }
+    }
+  }
+}
+.title-coin,
+.title-berat {
+  margin-bottom: 8px !important;
+}
+.title-coin {
+  font-weight: 500;
+  color: $gold !important;
+}
+
+.data-input {
+  .form-control {
+    width: 165px;
+  }
+}

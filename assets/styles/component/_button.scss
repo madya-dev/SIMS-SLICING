@@ -1,0 +1,82 @@
+.btn-my {
+  padding: 8px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: $black;
+  border: 0px solid;
+
+  &:hover {
+    color: $black;
+  }
+}
+.btn-my-primary {
+  background-color: $primary;
+  color: $white;
+  transition: 0.2s background ease-in-out;
+
+  &:hover {
+    color: $white;
+    background-color: $secondary;
+  }
+}
+.btn-register {
+  &:hover {
+    color: $primary;
+  }
+}
+.btn-nav-hide {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  align-items: center;
+  justify-content: center;
+  background-color: $white;
+  border: 1px solid $black;
+
+  span {
+    width: 1px;
+    height: 32px;
+    background-color: $black;
+
+    &:first-child {
+      transform: rotate(45deg);
+    }
+    &:last-child {
+      transform: rotate(-45deg);
+    }
+  }
+}
+.btn-auth-submit {
+  width: 100%;
+  padding: 16px 24px;
+  background-color: $green-light;
+  border: 1px solid $green-light;
+  color: $white;
+  font-weight: 500;
+  &:hover {
+    box-shadow: rgba(110, 231, 183, 0.2) 0px 8px 24px;
+  }
+}
+.btn-auth-google {
+  width: 100%;
+  padding: 16px 24px;
+  background-color: $white;
+  border: 1px solid $gray-200;
+  color: $black;
+  font-weight: 300;
+  transition: 0.5s border ease-in-out;
+  &:hover {
+    border: 1px solid $white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+}
+.btn-remove {
+  width: 32px !important;
+  height: 32px !important;
+  margin-top: 32px;
+  background-color: $red;
+  border: 1px solid $red;
+  border-radius: 5px;
+  padding: 4px;
+  color: $white;
+}

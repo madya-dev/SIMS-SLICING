@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/assets/images/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      href="/assets/images/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="/vendor/bootstrap-5.0.2-dist/css/bootstrap.min.css"
+      type="text/css"
+    />
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="/vendor/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/vendor/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
+    />
+    <!-- my style -->
+    <link rel="stylesheet" href="/assets/styles/main.css" type="text/css" />
+    <title>SIMS</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header-page">
+      <nav class="navbar navbar-expand-lg fixed-top" id="topbar">
+        <div class="container">
+          <a class="navbar-brand logo align-items-center d-flex gap-2" href="/">
+            <img
+              src="/assets/images/logo/sims.svg"
+              alt=""
+              width="45"
+              height="45"
+              class="d-inline-block align-text-top"
+            />
+            SIMS
+          </a>
+          <ul class="navbar-nav gap-3 d-flex align-items-center" id="navbarNav">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pengguna-terbaik">Pengguna Terbaik</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/hadiah">Hadiah</a>
+            </li>
+            <span class="divider"></span>
+            <!-- before login -->
+            <div class="auth">
+              <a href="/daftar" class="btn-register btn-my">Daftar</a>
+              <a href="/masuk" class="btn-login btn-my btn-my-primary">Masuk</a>
+            </div>
+            <!-- after login -->
+            <!-- <div class="auth">
+              <a href="/profile" class="avatar">
+                <img src="/assets/images/man-2.jpg" alt="" />
+                <span class="name d-none d-lg-block">Madya Santosa</span>
+              </a>
+            </div> -->
+          </ul>
+          <!-- before login -->
+          <a href="/masuk" class="icon-login"
+            ><i class="icon ion-md-contact"></i
+          ></a>
+        </div>
+      </nav>
+    </header>
+    <!-- end header -->
+    <!-- profile-page -->
+    <div class="profile-page">
+      <div class="container">
+        <h1 class="title-page">Profil Pengguna</h1>
+        <div class="row">
+          <div class="col-lg-6 col-xxl-3 col-md-6 col-12">
+            <div class="row">
+              <div class="col-12">
+                <div class="card card-profile-user my-3 border-0">
+                  <div class="profile-photo">
+                    <form action="">
+                      <input type="file" name="photo" id="input-photo" hidden />
+                    
+                    <button class="btn-edit-photo" id="btn-edit-photo">
+                      <i class="icon ion-md-create"></i>
+                    </button>
+                    <img src="/assets/images/man-2.jpg" alt="name" />
+                  </div>
+                  <div class="data-text text-center">
+                    <h2 class="name-user">Madya Santosa</h2>
+                    <p class="role">Masyarakat</p>
+                  </div>
+                  <div class="data d-flex gap-3">
+                    <div class="title d-flex gap-2 align-items-start">
+                      <img src="/assets/images/icons/coin.svg" alt="" /> 118 Koin
+                    </div>
+                    <div class="title d-flex gap-2 align-items-start">
+                      <img src="/assets/images/icons/trash.svg" alt="" /> 118 Kg
+                    </div>
+                  </div>
+                  <button class="btn btn-light btn-google">
+                    <img src="/assets/images//logo/google.svg" alt="" /> Terhubung
+                  </button>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="card my-3 border-0">
+                  <h3 class="title-card">Akun</h3>
+                  <div class="form-group ">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control input-profile" id="email" name="email" value="adaperlusamamadya@gmail.com">
+                  </div>
+                  <div class="form-check my-4">
+                    <input class="form-check-input" type="checkbox" value="" id="check-pw">
+                    <label class="form-check-label" for="check-pw">
+                      Ubah kata sandi
+                    </label>
+                  </div>
+                 <div class="pw" id="pw-wrapper">
+                  <div class="form-group ">
+                    <label for="password">Kata sandi saat ini</label>
+                    <input type="password" class="form-control input-profile" id="password" name="password" ><button class="show-hide-pw"><i class="icon ion-md-eye"></i></button>
+                  </div>
+                  <div class="form-group ">
+                    <label for="password">Kata sandi baru</label>
+                    <input type="password" class="form-control input-profile" id="password2" name="password2" ><button class="show-hide-pw"><i class="icon ion-md-eye"></i></button>
+                  </div>
+                  <div class="form-group ">
+                    <label for="password">Ulangi kata sandi baru</label>
+                    <input type="password" class="form-control input-profile" id="password3" name="password3" ><button class="show-hide-pw"><i class="icon ion-md-eye"></i></button>
+                  </div>
+                 </div>
+                </div>
+              </div>
+            </div>
+            
+           
+          </div>
+          <div class="col-xxl-5 col-lg-6 col-md-6 col-12">
+            <div class="card my-3 border-0">
+              <h3 class="title-card"><img src="/assets/images/icons/detail.svg" alt="">  Detail</h3>
+              <div class="form-group ">
+                <label for="name">Nama</label>
+                <input type="text" class="form-control input-profile" id="name" name="name" value="I Made Ari Madya Santosa">
+              </div>  
+              <div class="form-group ">
+                <label for="telepon">Telepon</label>
+                <input type="number" class="form-control input-profile" id="telepon" name="telepon" value="6285157349882">
+              </div>  
+              <div class="form-group ">
+                <label for="address">Alamat</label>
+                <input type="text" class="form-control input-profile" id="address" name="address" value="Br. Undisan Kaja">
+              </div> 
+              <div class="form-group ">
+                <label for="desa">Desa</label>
+                <input type="text" class="form-control input-profile" id="desa" name="desa" value="Undisan">
+              </div> 
+              <div class="form-group ">
+                <label for="city">Kabupaten / Kota</label>
+                <select name="city" id="city" class="form-select input-profile">
+                  <option value="" selected>Bangli</option>
+                  <option value="">Karangasem</option>
+                </select>
+              </div> 
+              <div class="form-group ">
+                <label for="prov">Provinsi</label>
+                <select name="prov" id="prov" class="form-select input-profile">
+                  <option value="">NTT</option>
+                  <option value="" selected>Bali</option>
+                  <option value="">NTB</option>
+                </select>
+              </div> 
+            
+            </form></div>
+          </div>
+          <div class="col-xxl-4  col-12">
+            <div class="card my-3 border-0">
+              <h3 class="title-card"><img src="/assets/images/icons/history.svg" alt="">  Riwayat</h3>
+              <table class="history">
+                <tr>
+                  <td class="date month-now">15/08/2021</td>
+                  <td class="type">Pemasukan</td>
+                  <td class="trash"><div class="title d-flex gap-1 align-items-start">
+                    <img src="/assets/images/icons/trash.svg" alt="" /> 118 Kg
+                  </div></td>
+                  <td class="coin"><div class="title d-flex gap-1 align-items-start">
+                    <img src="/assets/images/icons/coin.svg" alt="" /> 118 Koin
+                  </div></td>
+                </tr>
+                <tr>
+                  <td class="date month-now">10/08/2021</td>
+                  <td class="type">Pemasukan</td>
+                  <td class="trash"><div class="title d-flex gap-1 align-items-start">
+                    <img src="/assets/images/icons/trash.svg" alt="" /> 118 Kg
+                  </div></td>
+                  <td class="coin"><div class="title d-flex gap-1 align-items-start">
+                    <img src="/assets/images/icons/coin.svg" alt="" /> 118 Koin
+                  </div></td>
+                </tr>
+                <tr>
+                  <td class="date">15/07/2021</td>
+                  <td class="type">Pemasukan</td>
+                  <td class="trash"><div class="title d-flex gap-1 align-items-start">
+                    <img src="/assets/images/icons/trash.svg" alt="" /> 118 Kg
+                  </div></td>
+                  <td class="coin"><div class="title d-flex gap-1 align-items-start">
+                    <img src="/assets/images/icons/coin.svg" alt="" /> 118 Koin
+                  </div></td>
+                </tr>
+                <tr>
+                  <td class="date">05/07/2021</td>
+                  <td class="type">Pemasukan</td>
+                  <td class="trash"><div class="title d-flex gap-1 align-items-start">
+                    <img src="/assets/images/icons/trash.svg" alt="" /> 118 Kg
+                  </div></td>
+                  <td class="coin"><div class="title d-flex gap-1 align-items-start">
+                    <img src="/assets/images/icons/coin.svg" alt="" /> 118 Koin
+                  </div></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end profile-page -->
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="row footer-content">
+          <div class="col-lg-4">
+            <a class="logo align-items-center d-flex gap-2 mb-3" href="/">
+              <img
+                src="/assets/images/logo/sims.svg"
+                alt=""
+                width="45"
+                height="45"
+                class="d-inline-block align-text-top"
+              />
+              SIMS
+            </a>
+            <p>
+              Sistem Informasi Management Sampah (SIMS) adalah sebuah layanan
+              yang dibuat untuk membantu mengatasi masalah sampah yang ada di
+              Bumi.
+            </p>
+          </div>
+          <div class="col-lg-2 col-6 col-md-4 about-us">
+            <ul>
+              <li><h5 class="title">Tentang Kami</h5></li>
+              <li><a href="#" class="item">Testimoni</a></li>
+              <li><a href="#" class="item">Hadiah</a></li>
+              <li><a href="#" class="item">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-6 col-md-4 legal">
+            <ul>
+              <li><h5 class="title">Hukum</h5></li>
+              <li><a href="#" class="item">Syarat & Ketentuan</a></li>
+              <li><a href="#" class="item">Kebijakan Privasi</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-6 col-md-4 contact">
+            <ul>
+              <li><h5 class="title">Kontak</h5></li>
+              <li>
+                <a href="mailto:sims@gmail.com" class="item">sims@gmail.com</a>
+              </li>
+              <li>
+                <a href="tel:+6281334514521" class="item">0813-3451-4521</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-6 col-md-4 follow-us">
+            <ul>
+              <li><h5 class="title">Ikuti Kami</h5></li>
+              <li>
+                <a href="#" class="item">Facebook</a>
+              </li>
+              <li>
+                <a href="#" class="item">Twitter</a>
+              </li>
+              <li>
+                <a href="#" class="item">Instagram</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 text-center copyright">
+        Semua Hak Dilindungi SIMS-2021
+      </div>
+    </footer>
+    <!-- end footer -->
+    <!-- bottom nav -->
+    <section class="bottom-nav fixed-bottom">
+      <nav class="navbar">
+        <div class="container">
+          <ul class="navbar-nav d-flex align-items-center">
+            <!-- ROLE USER -->
+            <li class="nav-item active">
+              <a class="nav-link" href="/"
+                ><i class="icon ion-md-home"></i><span>Beranda</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pengguna-terbaik"
+                ><i class="icon ion-md-trophy"></i
+                ><span>Pengguna Terbaik</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/hadiah"
+                ><i class="icon ion-md-cube"></i><span>Hadiah</span></a
+              >
+            </li>
+            <!-- ROLE DESA -->
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="/terima-sampah"
+                ><i class="icon ion-md-bookmarks"></i
+                ><span>Terima Sampah</span></a
+              >
+            </li> -->
+            <!-- ROLE ADMIN -->
+            <li class="nav-item">
+              <a class="nav-link other" id="other" href=""
+                ><i class="icon ion-md-more"></i><span>Lainnya</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+    <!-- end bottom nav -->
+    <!-- other menus -->
+    <div class="other-menus navbar" id="other-menus">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="/"
+            ><i class="icon ion-md-home"></i><span>Beranda</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/"
+            ><i class="icon ion-md-home"></i><span>Beranda</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/"
+            ><i class="icon ion-md-home"></i><span>Beranda</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/"
+            ><i class="icon ion-md-home"></i><span>Beranda</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/"
+            ><i class="icon ion-md-home"></i><span>Beranda</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/"
+            ><i class="icon ion-md-home"></i><span>Beranda</span></a
+          >
+        </li>
+      </ul>
+    </div>
+    <!-- end other menus -->
+    <!-- scripts -->
+    <script src="/vendor/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="/vendor/jquery/jquery-3.6.0.min.js"></script>
+    <script src="/vendor/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <!-- my script -->
+    <script src="/assets/scripts/main.js"></script>
+    <script src="/assets/scripts/pages/profile.js"></script>
+  </body>
+</html>

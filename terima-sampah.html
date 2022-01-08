@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/assets/images/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      href="/assets/images/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="/vendor/bootstrap-5.0.2-dist/css/bootstrap.min.css"
+      type="text/css"
+    />
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="/vendor/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/vendor/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
+    />
+    <!-- my style -->
+    <link rel="stylesheet" href="/assets/styles/main.css" type="text/css" />
+    <title>SIMS</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header-page">
+      <nav class="navbar navbar-expand-lg fixed-top" id="topbar">
+        <div class="container">
+          <a class="navbar-brand logo align-items-center d-flex gap-2" href="/">
+            <img
+              src="/assets/images/logo/sims.svg"
+              alt=""
+              width="45"
+              height="45"
+              class="d-inline-block align-text-top"
+            />
+            SIMS
+          </a>
+          <ul class="navbar-nav gap-3 d-flex align-items-center" id="navbarNav">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pengguna-terbaik">Pengguna Terbaik</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/hadiah">Hadiah</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/hadiah">Terima Sampah</a>
+            </li>
+            <span class="divider"></span>
+            <div class="auth">
+              <a href="/profile" class="avatar">
+                <img src="/assets/images/man-2.jpg" alt="" />
+                <span class="name d-none d-lg-block">Madya Santosa</span>
+              </a>
+            </div>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- end header -->
+
+    <!-- page terima sampah -->
+    <section class="terima-sampah-page">
+      <div class="container">
+        <h1 class="text-center">
+          <img src="/assets/images/icons/recycle.svg" alt="" />
+          Form Terima Sampah
+        </h1>
+        <p class="text-center">
+          Pastikan data yang diinput benar sesuai realita tanpa ada kecurangan,
+          selalu cek data dua kali.
+        </p>
+        <div class="row w-100">
+          <div class="col-lg-5">
+            <div class="card p-3 border-0 h-100 rounded-5">
+              <form action="">
+                <div class="form-group mb-4">
+                  <div class="title d-flex gap-2 align-items-start mb-2">
+                    <img src="/assets/images/icons/user.svg" alt="" />
+                    <h5>Pilih User</h5>
+                  </div>
+                  <select
+                    name="user"
+                    id="user"
+                    class="form-select select-user rounded-3"
+                  >
+                    <option value="">Madya Santosa</option>
+                  </select>
+                </div>
+                <div class="form-group mb-4">
+                  <div class="title d-flex gap-2 align-items-start mb-2">
+                    <img src="/assets/images/icons/info.svg" alt="" />
+                    <h5>User Information</h5>
+                  </div>
+                  <div class="data">
+                    <div class="data-child mb-2">
+                      Nama : <span> Michael Parrel</span>
+                    </div>
+                    <div class="data-child mb-2">
+                      Email : <span> michaelparrel@gmail.com</span>
+                    </div>
+                    <div class="data-child mb-2">
+                      Telepon : <span> +628137958923</span>
+                    </div>
+                    <div class="data-child mb-2">
+                      Provinsi : <span> Bali</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group mb-4">
+                  <div class="title d-flex gap-2 align-items-start mb-2">
+                    <img src="/assets/images/icons/ringkasan.svg" alt="" />
+                    <h5>Ringkasan</h5>
+                  </div>
+                  <div class="data d-flex gap-3">
+                    <div class="data-berat">
+                      <div class="title d-flex gap-2 align-items-start h-50">
+                        <img src="/assets/images/icons/timbangan.svg" alt="" />
+                        <p class="title-berat">Total Berat (Kg)</p>
+                      </div>
+                      <input
+                        type="text"
+                        class="form-control"
+                        value="24"
+                        disabled
+                      />
+                    </div>
+                    <div class="data-koin">
+                      <div class="title d-flex gap-2 align-items-start h-50">
+                        <img src="/assets/images/icons/coin.svg" alt="" />
+                        <p class="title-coin">Total Koin</p>
+                      </div>
+                      <input
+                        type="text"
+                        class="form-control"
+                        value="24"
+                        disabled
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="
+                    button-section
+                    w-100
+                    d-flex
+                    gap-3
+                    align-items-center
+                    justify-content-end
+                  "
+                >
+                  <button
+                    type="submit"
+                    class="btn-simpan btn-my btn-my-primary"
+                  >
+                    Simpan
+                  </button>
+                  <button
+                    type="button"
+                    class="btn-tambah btn-my"
+                    id="btn-tambah"
+                  >
+                    Tambah
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="card p-3 border-0 rounded-5" id="card-input-data">
+              <div class="data data-input d-flex gap-3 flex-wrap mb-3">
+                <div class="data-sampah">
+                  <div class="title d-flex gap-2 align-items-start">
+                    <img src="/assets/images/icons/trash.svg" alt="" />
+                    <p class="title-berat">Jenis Sampah</p>
+                  </div>
+                  <select
+                    name="sampah"
+                    class="
+                      form-select
+                      select-sampah
+                      rounded-3
+                      form-control
+                      input-sampah
+                    "
+                  >
+                    <option value="">Mantan</option>
+                    <option value="">Plastik</option>
+                    <option value="">Kaca</option>
+                    <option value="">Aluminium</option>
+                  </select>
+                </div>
+                <div class="data-berat">
+                  <div class="title d-flex gap-2 align-items-start">
+                    <img src="/assets/images/icons/timbangan.svg" alt="" />
+                    <p class="title-berat">Total Berat (Kg)</p>
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control input-berat"
+                    value="24"
+                  />
+                </div>
+                <div class="data-coin">
+                  <div class="title d-flex gap-2 align-items-start">
+                    <img src="/assets/images/icons/coin.svg" alt="" />
+                    <p class="title-coin">Total Koin</p>
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control input-coin"
+                    value="24"
+                    disabled
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end page terima sampah -->
+
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="row footer-content">
+          <div class="col-lg-4">
+            <a class="logo align-items-center d-flex gap-2 mb-3" href="/">
+              <img
+                src="/assets/images/logo/sims.svg"
+                alt=""
+                width="45"
+                height="45"
+                class="d-inline-block align-text-top"
+              />
+              SIMS
+            </a>
+            <p>
+              Sistem Informasi Management Sampah (SIMS) adalah sebuah layanan
+              yang dibuat untuk membantu mengatasi masalah sampah yang ada di
+              Bumi.
+            </p>
+          </div>
+          <div class="col-lg-2 col-6 col-md-4 about-us">
+            <ul>
+              <li><h5 class="title">Tentang Kami</h5></li>
+              <li><a href="#" class="item">Testimoni</a></li>
+              <li><a href="#" class="item">Hadiah</a></li>
+              <li><a href="#" class="item">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-6 col-md-4 legal">
+            <ul>
+              <li><h5 class="title">Hukum</h5></li>
+              <li><a href="#" class="item">Syarat & Ketentuan</a></li>
+              <li><a href="#" class="item">Kebijakan Privasi</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-6 col-md-4 contact">
+            <ul>
+              <li><h5 class="title">Kontak</h5></li>
+              <li>
+                <a href="mailto:sims@gmail.com" class="item">sims@gmail.com</a>
+              </li>
+              <li>
+                <a href="tel:+6281334514521" class="item">0813-3451-4521</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-6 col-md-4 follow-us">
+            <ul>
+              <li><h5 class="title">Ikuti Kami</h5></li>
+              <li>
+                <a href="#" class="item">Facebook</a>
+              </li>
+              <li>
+                <a href="#" class="item">Twitter</a>
+              </li>
+              <li>
+                <a href="#" class="item">Instagram</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 text-center copyright">
+        Semua Hak Dilindungi SIMS-2021
+      </div>
+    </footer>
+    <!-- end footer -->
+    <!-- bottom nav -->
+    <section class="bottom-nav fixed-bottom">
+      <nav class="navbar">
+        <div class="container">
+          <ul class="navbar-nav d-flex align-items-center">
+            <!-- ROLE USER -->
+            <li class="nav-item active">
+              <a class="nav-link" href="/"
+                ><i class="icon ion-md-home"></i><span>Beranda</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pengguna-terbaik"
+                ><i class="icon ion-md-trophy"></i
+                ><span>Pengguna Terbaik</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/hadiah"
+                ><i class="icon ion-md-cube"></i><span>Hadiah</span></a
+              >
+            </li>
+            <!-- ROLE DESA -->
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="/terima-sampah"
+                ><i class="icon ion-md-bookmarks"></i
+                ><span>Terima Sampah</span></a
+              >
+            </li> -->
+            <!-- ROLE ADMIN -->
+            <li class="nav-item">
+              <a class="nav-link other" id="other" href=""
+                ><i class="icon ion-md-more"></i><span>Lainnya</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+    <!-- end bottom nav -->
+    <!-- other menus -->
+    <div class="other-menus navbar" id="other-menus">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="/"
+            ><i class="icon ion-md-home"></i><span>Beranda</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/"
+            ><i class="icon ion-md-home"></i><span>Beranda</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/"
+            ><i class="icon ion-md-home"></i><span>Beranda</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/"
+            ><i class="icon ion-md-home"></i><span>Beranda</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/"
+            ><i class="icon ion-md-home"></i><span>Beranda</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/"
+            ><i class="icon ion-md-home"></i><span>Beranda</span></a
+          >
+        </li>
+      </ul>
+    </div>
+    <!-- end other menus -->
+    <!-- scripts -->
+    <script src="/vendor/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="/vendor/jquery/jquery-3.6.0.min.js"></script>
+    <script src="/vendor/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <!-- my script -->
+    <script src="/assets/scripts/main.js"></script>
+    <script src="/assets/scripts/pages/terimaSampah.js"></script>
+  </body>
+</html>
